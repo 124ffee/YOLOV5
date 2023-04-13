@@ -155,7 +155,9 @@ labelimg的快捷键如下，学会快捷键可以帮助你提高数据标注的
 ![image-20211212174920551](https://user-images.githubusercontent.com/130628227/231674717-b3e651e2-79a9-44af-8956-d43ba2690789.png)
 
  执行下列代码运行程序即可：
+ 
           python train.py --data mask_data.yaml --cfg mask_yolov5s.yaml --weights pretrained/yolov5s.pt --epoch 100 --batch-size 4 --device cpu
+ 
  
  ![image-20210610113348751](https://user-images.githubusercontent.com/130628227/231674966-e92eb00d-3bba-487f-a92f-f4390fdf5f14.png)
 
