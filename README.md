@@ -34,8 +34,8 @@ YOLOV5的识别使用YOLOV5来训练一个自己检测模型。
 一定要创建虚拟环境，这样的话各个深度学习框架之间不发生冲突
 我这里创建的是python3.8的环境，安装的Pytorch的版本是1.8.0，命令如下：
 
-      conda install pytorch==1.8.0 torchvision torchaudio cudatoolkit=10.2 # 注意这条命令指定Pytorch的版本和cuda的版本
-
+      conda install pytorch==1.10.0 torchvision torchaudio cudatoolkit=11.3 # 30系列以上显卡gpu版本pytorch安装指令
+      conda install pytorch==1.8.0 torchvision torchaudio cudatoolkit=10.2 # 10系和20系以及mx系列的执行这条,注意这条命令指定Pytorch的版本和cuda的版本
       conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cpuonly # CPU的小伙伴直接执行这条命令即可
 
 pycocotools的安装
