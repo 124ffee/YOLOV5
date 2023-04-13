@@ -1,20 +1,6 @@
-# 【2023-Pytorch-检测教程】手把手教你使用YOLOV5做麦穗计数
+#使用YOLOV5物体识别
 
-<font color='red'>（肆十二想说的一些话）</font>Yolo这个系列我们已经更新了大概一年的时间，现在基本的流程也走走通了，包含数据的标注、模型的训练和测试以及图形化界面的构建，后面的更新除了解决一些由于时间上带来的库的bug之外，已经没有什么新的东西可以说的了，基本都是换个数据集给大家更新一下，所以后面关于YOLOv5检测系列的我们就不专门更新讲解的视频了。就大家有需要在每周的动态留言，我这边会更新在面包多的网站上，前面会放一些效果图，大家按需取用即可。后续还是更新一些能教给大家东西的内容。
 
-面包多主页：[肆十二的个人主页 (mbd.pub)](https://mbd.pub/o/author-a2aUmGpmZw==/work)
-
-项目下载地址：[**YOLOV5麦穗计数项目下载**](https://mbd.pub/o/bread/ZJablJ1y)
-
-小麦是世界上种植地域最广、面积最大及产量最多的粮食作物,2021年世界小麦使用量达到7.54亿吨。小麦产量的及时预估对作物生产、粮食价格及粮食安全产生重大影响,单位面积穗数是小麦产量预估研究中的难点及重中之重。当前,人工估产方法依据专家目测估计产量,准确率得不到保证。取样估产方法通过采集部分区域,进行人工计数、称重,费时费力。随着计算机视觉技术的发展,大量研究致力于统计单幅图像中麦穗数进而实现估产,此类研究利用卷积神经网络强大的特征自学习能力,对麦穗进行特征提取,通过大量数据训练模型,进而成功实现对图像中麦穗计数,为后续小麦估产提供数据参考。然而部分现有的麦穗计数研究基于通用的原始计数网络,未考虑小麦尺度不一、密集等特点进行优化,准确率有待提升。
-
-本期我们将深度学习算法YOLOV5和农业进行结合，通过目标检测的方式来统计一片区域中的麦穗数量。废话不多说，先看效果。
-
-![image-20230322214806157](https://vehicle4cm.oss-cn-beijing.aliyuncs.com/imgs/image-20230322214806157.png)
-
-![val_batch1_pred](https://vehicle4cm.oss-cn-beijing.aliyuncs.com/imgs/val_batch1_pred.jpg)
-
-![PR_curve_wheat](https://vehicle4cm.oss-cn-beijing.aliyuncs.com/imgs/PR_curve_wheat.png)
 
 ## <font color='red'>注意事项</font>
 
@@ -22,13 +8,10 @@
 2. pycharm运行代码一定要注意左下角是否在虚拟环境中。
 3. 库的版本很重要，使用本教程提供的代码将会事半功倍
 
-遇到解决不了的问题可以通过<font color='red'>私信（QQ:3045834499）</font>联系我，粉丝儿朋友远程调试该项目（包含数据集和训练好的4组模型）仅需99个圆子。
 
 ## 前期准备
 
-电脑的基础设置以及软件的安装这边不再做赘述，前期的准备工作参考下面博客的内容。
-
-[【2023-Pytorch-检测教程】手把手教你使用YOLOV5做电线绝缘子缺陷检测_肆十二的博客-CSDN博客](https://blog.csdn.net/ECHOSON/article/details/129560401)
+电脑的基础设置以及软件的安装这边不再做赘述
 
 ## 环境配置
 
@@ -164,6 +147,4 @@ pip install -r requirements.txt
 
 ![image-20230322215558210](https://vehicle4cm.oss-cn-beijing.aliyuncs.com/imgs/image-20230322215558210.png)
 
-直接右键执行window_main.py执行即可，这里上两章效果图。
-
-![image-20230322215519120](https://vehicle4cm.oss-cn-beijing.aliyuncs.com/imgs/image-20230322215519120.png)
+直接右键执行window_main.py执行即可
